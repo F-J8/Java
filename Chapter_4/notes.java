@@ -17,10 +17,36 @@
 *
 * Java is pass-by-value That means pass-by-copy.
 *
+* java passes everything by value.
+* getters and setters/accessors and mutators
+* make the instance private and set public getters and setter
+*
+* instance variables vs. Local Variables
+* Instance variables are declared inside a class bit not within a method.
+* Local variables are declared within a method.
+* Local variables must be initialized before use.
+* local variables in methods need to be initialized int x = 0;
+*  use == to compare two primitives or if two references are refering to the same object.
+* use the equals() method to see if two different objects are equal.
+* == cares only for the bits patter in the variable.
 *
 *
-*
+*start page 87
 *
 *
 *
 * */
+
+class ElectricGuitar{
+    String brand;
+    int numOfPickups;
+    boolean rockStarUsesIt;
+    Foo a = new Foo();
+    String getBrand(){
+        return brand;
+    }
+    void setBrand(String aBrand){
+        brand = aBrand;
+    }
+}
+
